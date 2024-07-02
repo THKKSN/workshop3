@@ -1,0 +1,29 @@
+.fa-solid{
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--text-color-second);
+}
+.fa-bar{
+    font-size: 100px;
+    margin-right: 50px; ;
+    cursor: pointer;
+    color: var(--primmry-color);
+    align-items: center;
+}
+.fa-brands{
+    font-size: 50px;
+    padding: 50px;
+    cursor: pointer;
+    color: var( --background);
+    
+}
+.fa-brands:hover{
+    color: var(--primmry-color-second);
+}
+
+.contact{
+    background-color: var(--primmry-color);
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 0;
+}

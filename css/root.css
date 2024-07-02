@@ -1,0 +1,19 @@
+:root{
+    --primmry-color-second:rgb(29, 45, 85);
+    --primmry-color:rgb(255,92,92);
+    --text-color:rgb(66,66,66);
+    --text-color-second:rgba(66,66,66,7);
+    --background:rgb(255,255,255);
+    --background-second:rgb(3, 5, 27);
+    --box-shadow:0 5px 20px 1px rgba(0,0,9,5);
+}
+
+[data-theme= "dark"]{
+    --primmry-color-second:rgb(255,92,92);
+    --primmry-color:rgb(255, 238, 0);
+    --text-color:rgb(255, 255, 255);
+    --text-color-second:rgba(255, 255, 255,8);
+    --background:rgb(3, 5, 27);
+    --background-second:rgb(255, 255, 255);
+    --box-shadow:0 5px 20px 1px rgba(255,255,255, 0.5);
+}

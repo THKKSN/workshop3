@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--background);
+    text-decoration: none;
+    padding: 14px;
+}
+
+.nav-links a:hover {
+    transition: 0.5s;
+    color: var(--primary-color-second);
+}
+
+.fa-bars {
+    display: block;
+    font-size: 24px;
+    color: var(--background);
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-solid fa-bars" onclick="toggleNavBar()"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="theme-switch-container">
+            <span id="toggle-icon">
+                <span class="toggle-text">Light mode</span>
+                <i class="fa-solid fa-sun"></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider"></div>
+            </label>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="title-group">
+            <div class="head-01">Workshop</div>
+            <div class="head-02">Workshop by Thakorn Khamsingnok</div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="head-01">Past projects</div>
+        <div class="project-container">
+            <div class="section-container">
+                <div class="head-02">Font-end</div>
+                <img src="img/undraw_website_light.svg" id="img1">
+            </div>
+            <div class="section-container">
+                <div class="head-02">Hardware project</div>
+                <img src="img/undraw_smart_home_light.svg" alt="" id="img2">
+            </div>
+            <div class="section-container">
+                <div class="head-02">Photoshop</div>
+                <img src="img/undraw_designer_girl_light.svg" alt="" id="img3">
+            </div>
+        </div>
+    </section>
+    <div class="contact" id="contact">
+        <div class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-line"></i>
+        </div>
+    </div>
+    <script src="controller/SwitchMode.js"></script>
+    <script src="controller/Reponsive.js"></script>
+</body>
+</html>

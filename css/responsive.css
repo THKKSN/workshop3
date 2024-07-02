@@ -1,0 +1,34 @@
+@media (min-width:1165px){
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-container{
+        display: flex;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1035px) {
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--primary-color);
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+    }
+    .nav-links.responsive {
+        display: flex;
+    }
+    .fa-bars {
+        display: block;
+    }
+}
