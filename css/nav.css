@@ -1,7 +1,8 @@
-nav .fa-bars{
+nav .fa-bars {
     display: none;
 }
-nav{
+
+nav {
     margin: 0;
     position: fixed;
     z-index: 10;
@@ -10,19 +11,33 @@ nav{
     background: var(--primmry-color);
     border-radius: 50px;
     overflow: hidden;
+    transition: top 0.3s;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
 
+.hidden {
+    top: -200px;
+    transition: top 0.8s;
+}
 
-.nav-bar{
+nav,
+.theme-switch-container {
+    transition: top 0.3s;
+}
+
+.nav-bar {
     color: var(--primmry-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    font-weight: bold;    
+    font-weight: bold;
 }
-ul{
+
+ul {
     display: flex;
 }
-li{
+
+li {
     margin-right: 25px;
     color: var(--background);
     text-decoration: none;
@@ -31,12 +46,15 @@ li{
     display: inline-block;
     cursor: pointer;
 }
-li:hover,li:focus{
+
+li:hover,
+li:focus {
     color: var(--primmry-color-second);
     border-bottom: 3px solid;
     transition: 0.5s;
 }
-.theme-switch-container{
+
+.theme-switch-container {
     display: flex;
     align-items: center;
     z-index: 100;
@@ -44,12 +62,13 @@ li:hover,li:focus{
     right: 25px;
     top: 30px;
 }
-.theme-switch-container span{
+
+.theme-switch-container span {
     margin-right: 10px;
     font-size: 1rem;
 }
 
-.toggle-text{
+.toggle-text {
     position: relative;
     right: 1px;
     display: inline-block;
@@ -57,17 +76,18 @@ li:hover,li:focus{
     /* border: 1px solid black; */
 }
 
-.theme-switch{
+.theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
 }
 
-.theme-switch input{
+.theme-switch input {
     display: none;
 }
-.slider{
+
+.slider {
     background: var(--primmry-color);
     bottom: 0;
     cursor: pointer;
@@ -79,18 +99,19 @@ li:hover,li:focus{
     border-radius: 34px;
 }
 
-.slider::before{
+.slider::before {
     background: #fff;
     content: "";
     bottom: 4px;
     height: 26px;
     left: 4px;
     position: absolute;
-    transition: 0,7s;
+    transition: 0, 7s;
     width: 26px;
     border-radius: 50%;
     background-color: var(--background);
 }
-input:checked +.slider::before{
+
+input:checked+.slider::before {
     transform: translateX(26px);
 }
