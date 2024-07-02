@@ -6,13 +6,11 @@ nav {
     margin: 0;
     position: fixed;
     z-index: 10;
-    font-size: 24px;
     letter-spacing: 2px;
     background: var(--primmry-color);
     border-radius: 50px;
     overflow: hidden;
-    transition: top 0.3s;
-    font-size: 24px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 
